@@ -14,7 +14,7 @@ echo 'executing tests to check banana quality/quantity'
 
 ruby -r yaml -e"
   load_banana = YAML.load_file('banana.yml')
-  if (load_banana['number'] <= 100) || (load_banana['color'] != 'yellow')
+  if (load_banana['number'] <= 100) || (load_banana['color'] == 'yellow')
     raise 'bad bad very bad banana shipment !!!!'
   end
   puts 'good banana'
