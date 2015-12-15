@@ -1,0 +1,11 @@
+---
+platform: linux
+image: docker:///cfcloudops/docker-cloudops-ci
+
+
+inputs:
+- name: fruits
+
+
+run:
+  path: fruits/intergration/task.sh 

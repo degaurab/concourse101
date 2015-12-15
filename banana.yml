@@ -1,5 +1,4 @@
-name_of_resource: banana
-  - type: banana
-    no: 100
-    color: yello
+type: banana
+no: 100
+color: yellow
 
