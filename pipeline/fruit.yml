@@ -6,9 +6,9 @@ jobs:
     - get: fruits
       trigger: true
   - task: integration-banana-test
-    file: fruits/integraton/banana-test.yml
+    file: fruits/integration/banana-test.yml
   - task: integration-apple-test
-    file: fruits/integraton/apple-test.yml
+    file: fruits/integration/apple-test.yml
 
 resources:
 - name: fruits

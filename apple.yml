@@ -1,3 +1,5 @@
- type: apple
- no: 200
- color: red
+--
+
+type: apple
+number: 200
+color: red
