@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-set -e -x
+set -e 
 source /etc/profile.d/chruby-with-default-ruby.sh
 
 cd fruits
@@ -10,11 +10,11 @@ pwd
 echo 'List of files in repo'
 ls -l
 
-echo 'executing tests to check banana quality/quantity'
+echo 'executing tests to check banana qualit`y/quantity'
 
 ruby -r yaml -e"
   load_banana = YAML.load_file('banana.yml')
-  if (load_banana['number'] <= 100) || (load_banana['color'] == 'yellow')
+  if (load_banana['number'] < 100) || (load_banana['color'] != 'yellow')
     raise 'bad bad very bad banana shipment !!!!'
   end
   puts 'good banana'
