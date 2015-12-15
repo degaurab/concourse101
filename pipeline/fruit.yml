@@ -1,14 +1,16 @@
-name: fruit-basket-integration
-plan:
-- aggregate:
-  - get: fruits
-    trigger: true
-- task: integration-banana-test
-  file: fruits/integraton/banana-test.yml
-- task: integration-apple-test
-  file: fruits/integraton/apple-test.yml
+---
+jobs:
+- name: fruit-basket-integration
+  plan:
+  - aggregate:
+    - get: fruits
+      trigger: true
+  - task: integration-banana-test
+    file: fruits/integraton/banana-test.yml
+  - task: integration-apple-test
+    file: fruits/integraton/apple-test.yml
 
-reources:
+resources:
 - name: fruits
   type: git
   source:

@@ -8,4 +8,4 @@ inputs:
 
 
 run:
-  path: fruits/intergration/task.sh 
+  path: fruits/integration/apple-test.sh 
