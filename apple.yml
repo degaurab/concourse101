@@ -1,0 +1,4 @@
+name_of_resource: apple
+  - type: apple
+    no: 200
+    color: red
